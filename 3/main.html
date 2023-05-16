@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    
+    <link rel = "icon" href="favicon.png">
+    <title>Mabroche - магазин доступного чоловічого взуття</title>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alasql@1.7"></script>
+    
+</head>
+
+<body class = "backg">
+
+    <header class = "container-fluid">
+        
+        <nav class = "container">
+            <a class = "menu-content" id = "itr"  href = "main.html"><img src="../2/logo.png" alt="logotip" width="150" height="50" title="Логотип"/></a>
+        </nav>
+
+        <nav class ="container2">
+            <div class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class = "burger-elements">
+                <p class = "menu-content cart-open" onclick="open_cart()">Корзина</p>
+                
+                <a class="menu-content" href = "news/news.html">Новини</a>
+                <a class="menu-content" href = "#">Оплата/доставка</a>
+                <a class="menu-content" href = "#">Зареєструватися</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class = subscribe-window>
+        <p>Бажаєте підписатися на наші новини?</p>
+        <button class = "acceptBtn" onclick="addMember()">Прийняти</button>
+        <button class = "declineBtn" onclick="removeWindow()">Закрити</button>
+    </div>
+
+    </div>
+
+    <p class = "empty">Корзина пуста</p>
+
+    <div class = "cart-container">
+        <div class ="cart-wrapper">
+            <div class = "cart"></div>
+            <p class = "totalMoney">00000</p>
+            <button class = "clearCart buttonCart" onclick="clearCart()">Очистити кошик</button>
+        </div>    
+    </div>
+
+    <div id = "filterContainer"></div>
+    
+    <div class = "blocks"></div>
+    
+    
+    <div class ="stats-container">
+        <div class = "stats-wrapper">
+            <div class = "stats-btns">
+                <p class = "sortP">Сортировка:</p>
+                <button class = "Pie buttonCart">Pie</button>
+                <button class = "Column buttonCart">Column</button>
+                <button class = "Linear buttonCart">Linear</button>
+
+            </div>
+            <div class = "stats">
+                <div id="chartContainer">
+                    <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+        <img src="../2/одяг1.jpg" alt="jpg" class="clothes">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "more-container">
+        <button class = "moreBtn">БІЛЬШЕ</button>
+    </div>
+    <div id = "goUp" onclick="topFunction()">
+        <img src = "arrow.svg">
+    </div>
+
+    <div class="advertise">
+        <div class="close-timer">
+            <img class="close" src = "close.svg">
+            <p class="timer">0</p>
+        </div>
+        
+        <img src="advertise.jpg" alt="advertise" class="advertiseImg">
+        
+    </div>
+    
+    <footer>
+        
+    </footer>
+    
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="burgerMenu.js"></script>
+    <script src="render.js"></script>
+</body>
+</html> 
